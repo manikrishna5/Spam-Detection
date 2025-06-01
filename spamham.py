@@ -11,7 +11,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 # from wordcloud import WordCloud
 
-df = pd.read_csv(r"C:\\Users\\Mani Krishna Karri\\Downloads\\spam_ham_dataset.csv")
+df = pd.read_csv("spam_ham_dataset.csv")
 ham_msg = df[df['label']=='ham']
 spam_msg = df[df['label']=='spam']
 ham_msg = ham_msg.sample(n=len(spam_msg),random_state=42)
